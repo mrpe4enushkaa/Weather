@@ -23,7 +23,7 @@ A modern and dynamic weather application built using **React, JavaScript, and Sa
 client/
 │── src/
 │   ├── components/
-│   |   ├── form/
+│   │  ├── form/
 │   ├── App.jsx
 │   ├── App.scss
 │   ├── fonts.scss
