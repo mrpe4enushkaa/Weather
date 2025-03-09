@@ -1,12 +1,70 @@
-# React + Vite
+# ⛅ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and dynamic weather application built using **React, JavaScript, and Sass**. The backend is being developed with **Node.js, Express.js, and MySQL** to allow users to save the cities they have searched for.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time weather updates for any city
+- Responsive and user-friendly interface
+- Saves user search history (in progress)
+- Future integration with **MySQL database** for data storage
 
-## Expanding the ESLint configuration
+## 🚀 Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** – Frontend framework
+- **JavaScript** – Core programming language
+- **Sass** – Enhanced styling
+- **Node.js & Express.js** – Backend development (in progress)
+- **MySQL** – Database for storing search history (coming soon)
+
+## 📂 Project Structure
+
+```bash
+client/
+│── src/
+│   ├── components/
+│   │   ├── form/
+│   │   ├── App.jsx
+│   │   ├── App.scss
+│   │   ├── fonts.scss
+│   │   ├── main.jsx
+│── .gitignore
+│── README.md
+│── eslint.config.js
+│── index.html
+│── package-lock.json
+│── package.json
+│── vite.config.js
+│── .gitattributes
+```
+
+## 📌 Installation
+
+Clone the repository:
+```bash
+git clone https://github.com/MrPe4enkaa/Weather.git
+```
+Navigate to the project folder and install dependencies:
+```bash
+cd weather-app/client
+npm install
+```
+Start the development server:
+```bash
+npm run dev
+```
+
+## 🔮 Future Plans
+
+- Complete backend development
+- Implement user authentication
+- Improve UI/UX with animations
+- Enhance accessibility and performance
+
+## 👨‍💻 Author
+
+Developed by **Danik**. Stay tuned for updates!
+
+---
+
+⭐ If you like this project, don't forget to star it on GitHub! ⭐
