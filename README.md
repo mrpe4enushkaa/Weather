@@ -42,11 +42,11 @@ client/
 
 Clone the repository:
 ```bash
-git clone [https://github.com/yourusername/weather-app.git](https://github.com/MrPe4enkaa/Weather.git)
+git clone https://github.com/MrPe4enkaa/Weather.git
 ```
 Navigate to the project folder and install dependencies:
 ```bash
-cd weather-app/client
+cd Weather/client
 npm install
 ```
 Start the development server:
