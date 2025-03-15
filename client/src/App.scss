@@ -14,6 +14,8 @@ body {
     background-color: var(--color);
 }
 
+// Form
+
 .form__conteiner {
     width: 100%;
     height: 100vh;
@@ -58,6 +60,31 @@ body {
         width: 270px;
         height: 270px;
         fill: #fff;
+    }
+}
+
+.database__image {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    box-shadow:
+        20px 20px 45px $shadow-dark,
+        -20px -20px 45px $shadow-light;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 25px 25px 0 0;
+
+    svg {
+        width: 80px;
+        height: 80px;
+        fill: var(--color);
+        margin-bottom: 4px;
+        margin-left: 1px;
     }
 }
 
@@ -149,4 +176,100 @@ body {
 
 .city__input::placeholder {
     color: var(--color);
+}
+
+//Database
+
+.database__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.database__name {
+    border: none;
+    outline: 0;
+    outline-offset: 0;
+    background-color: #fff;
+    font-size: 64px;
+    border-radius: 15px;
+    padding: 0 30px;
+    height: 100px;
+    color: var(--color);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        20px 20px 45px $shadow-dark,
+        -20px -20px 45px $shadow-light;
+    margin-top: 25px;
+}
+
+.database__informations {
+    position: relative;
+    width: 80%;
+    height: 74vh;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    row-gap: 20px;
+    padding: 40px;
+    overflow-y: auto;
+    background-color: var(--color);
+    box-shadow:
+        inset 20px 20px 20px $shadow-dark,
+        inset -20px -20px 20px $shadow-light;
+}
+
+.database__block {
+    width: 94.7%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+
+    margin-bottom: 10px;
+    padding: 0 40px;
+
+    border-radius: 15px;
+    box-shadow:
+        20px 20px 45px $shadow-dark,
+        -20px -20px 45px $shadow-light;
+}
+
+.types__inner {
+    background-color: #fff;
+    color: var(--color);
+    font-size: 40px;
+}
+
+.database__information {
+    color: #fff;
+    font-size: 32px;
+}
+
+.database__information-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 250px 290px 290px 300px 80px 250px;
+    text-align: start;
+}
+
+.database__information .opacity {
+    opacity: 0.65;
+}
+
+.database__information:nth-child(2) {
+    margin-top: 10px;
+}
+
+.database__information-grid span:nth-child(6) {
+    text-align: end;
 }

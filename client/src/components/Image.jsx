@@ -14,8 +14,6 @@ export default function Image({ weather }) {
                 return <WiSnow />;
             case "Haze":
                 return <WiFog />;
-            default:
-                return <WiDaySunny />;
         }
     };
 
