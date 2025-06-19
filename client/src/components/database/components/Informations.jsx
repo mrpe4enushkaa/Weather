@@ -11,7 +11,7 @@ export default function Informations({ data }) {
                     <Information data={array} key={index} />
                 ))
             ) : (
-                <p>No data</p>
+                <p className="ibm-plex-mono-semibold" style={{color: "#fff", fontSize: "32px"}}>No data</p>
             )}
         </div>
     );

@@ -6,7 +6,7 @@ export default function Information({ data }) {
             style={{ backgroundColor: data.color }}
         >
             <div className="database__information-grid">
-                <span className="ibm-plex-mono-semibold">{data.city}</span>
+                <span className="ibm-plex-mono-semibold database__information--text">{data.city}</span>
                 <span className="ibm-plex-mono-semibold">{data.weather}</span>
                 <span className="ibm-plex-mono-semibold">
                     {data.temperature}

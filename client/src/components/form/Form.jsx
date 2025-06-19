@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useLayoutEffect } from "react";
 import Temprature from "./components/Temprature";
 import City from "./components/City";
 import NameWeather from "./components/NameWeather";
@@ -15,9 +15,9 @@ export default function Form() {
     const [city, setCity] = useState();
     const [date, setDate] = useState(`${new Date().getDate()}.${new Date().getMonth()}.${new Date().getFullYear()}`);
 
-    setInterval(() => {
-        setDate(`${new Date().getDate()}.${new Date().getMonth()}.${new Date().getFullYear()}`);
-    }, 1000 * 60 * 24);
+    useLayoutEffect(() => {
+        setDate(`${new Date().getDate()}.${new Date().getMonth() + 1}.${new Date().getFullYear()}`);
+    }, []);
 
     function turnColors() {
         if (!data?.weather?.[0]?.main) {
@@ -28,16 +28,16 @@ export default function Form() {
     }
 
     function getCity(city) {
-        if(city) {
+        if (city) {
             const splitted = city.split("");
 
             const first = splitted[0].toUpperCase();
-    
+
             const rest = [...splitted];
             rest.splice(0, 1);
-    
+
             const result = [first, ...rest].join("");
-    
+
             setCity(result);
         }
     }
